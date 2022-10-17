@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - The program entry point starts here.
  *
  * Description: The code to generate random number and check the last digit
