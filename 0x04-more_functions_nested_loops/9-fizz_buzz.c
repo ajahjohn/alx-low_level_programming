@@ -1,59 +1,35 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * program for print 1 to 100 and skips multiples of 3 & 5
+ * fizz_buzz -> to print numbers from 1 to 100 replacing 3 and 5
  */
 
-int main(void)
+void fizz_buzz(void)
 {
-	int num = 1;
+	int x;
 
-	while (num <= 100)
+	for (x = 0; x < 100; x++)
 	{
-		if ((num % 3) != 0 && (num % 5) != 0)
+		if (x == 100)
 		{
-			if (num < 10)
-			{
-				_putchar(num);
-				_putchar(' ');
-			}
-			else
-			{
-				if (num < 20)
-				{
-					_putchar('1');
-					_putchar((num % 10) + '0');
-					_putchar(' ');
-				}
-				else
-				{
-					_putchar(num / 10);
-					_putchar((num % 10) + '0');
-					_putchar(' ');
-				}
-			}
-			
+			printf("Buzz");
+		}
+		else if (x % 3 == 0)
+		{
+			printf("Fizz ");
+		}
+		else if (x % 5 == 0)
+		{
+			printf("Buzz ");
+		}
+		else if (x % 3 == 0 && x % 5 == 0)
+		{
+			printf("FizzBuzz ");
 		}
 		else
 		{
-			if ((num % 3) == 0)
-			{
-				_putchar('F');
-				_putchar('i');
-				_putchar('z');
-				_putchar('z');
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar('B');
-				_putchar('u');
-				_putchar('z');
-				_putchar('z');
-				_putchar(' ');
-			}
+			printf("%d ", x);
 		}
-		num++;
 	}
-	_putchar('\n');
 }
