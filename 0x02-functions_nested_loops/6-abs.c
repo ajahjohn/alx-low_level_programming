@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * __abs => function that prints the absolute value of a number
- * Designed by: Ajah John Nnaemeka
- * @n => Number to check for the absolute value
- * Return: returns the absolute avlue of @n
+ * _abs -> return the absolute value of a number
+ * @n: parameter
+ * Return: absolute value of number
  */
 
 int _abs(int n)
