@@ -2,7 +2,9 @@
 
 /**
  * mul -> function to check for multiplication
- * @c: integer parameter
+ *
+ * @a: first integer parameter
+ * @b: second integer parameter
  * Return: success function
  */
 
