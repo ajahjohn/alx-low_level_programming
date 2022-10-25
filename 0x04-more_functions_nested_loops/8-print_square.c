@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * print_square -> prints a square depending on length of size;
+ * @size: the parameter for printing square
+ */
+
 void print_square(int size)
 {
 	int x, y;
