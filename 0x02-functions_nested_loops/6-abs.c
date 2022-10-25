@@ -5,9 +5,15 @@
  * Designed by: Ajah John Nnaemeka
  */
 
-int _abs(int)
+int _abs(int n)
 {
-	int num;
-
-	_putchar(num);
+	if(n < 0)
+	{
+		n = -n;
+	}
+	else
+	{
+		n = n;
+	}
+	return (n);
 }
