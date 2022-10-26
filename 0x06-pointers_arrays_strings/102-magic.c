@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main -> function that prints a value by adding just one extra line
+ * Return: 0
+ */
+
 int main(void)
 {
 	int n;
