@@ -16,20 +16,17 @@ int main(void)
 	for (count = 0; count < stopPoint; count++)
 	{
 		sum = fib1 + fib2;
-
-		if ((sum % 2) == 0)
+		
+		printf("%lu", sum);
+		if (count == (stopPoint - 1))
 		{
-			printf("%lu", sum);
-			if (count == (stopPoint - 1))
-			{
-				printf("\n");
-			}
-			else
-			{
-				printf(", ");
-			}
+			printf("\n");
 		}
-
+		else
+		{
+			printf(", ");
+		}
+	
 		fib1 = fib2;
 		fib2 = sum;
 	}
