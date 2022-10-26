@@ -16,7 +16,7 @@ int main(void)
 	for (count = 0; count < stopPoint; count++)
 	{
 		sum = fib1 + fib2;
-		
+
 		printf("%lu", sum);
 		if (count == (stopPoint - 1))
 		{
@@ -26,7 +26,7 @@ int main(void)
 		{
 			printf(", ");
 		}
-	
+
 		fib1 = fib2;
 		fib2 = sum;
 	}
